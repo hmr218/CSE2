@@ -24,6 +24,9 @@ public class Arithmetic{
         double envelopeCost$=3.25;
         double taxPercent=0.06;
         
+        double totalSockCost$; //total cost of socks
+        
+        
         
         
         
