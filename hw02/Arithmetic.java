@@ -24,18 +24,21 @@ public class Arithmetic{
         double envelopeCost$=3.25;
         double taxPercent=0.06;
         
+        //sock variables
         double totalSockCost$, totalSockTax$, totalSalesTaxS$; //total cost of socks
         totalSockCost$=(nSocks * sockCost$);
         totalSalesTaxS$ =(totalSockCost$ * taxPercent);
         totalSockTax$=(totalSockCost$) + (totalSalesTaxS$);
         double totalAfterTaxS$=totalSalesTaxS$+totalSockCost$;
         
+        //glass variables
         double totalGlassCost$, totalGlassTax$, totalSalesTaxG$;
         totalGlassCost$=(nGlasses * glassCost$);
         totalSalesTaxG$=(totalGlassCost$ * taxPercent);
         totalGlassTax$=(totalGlassCost$) + (totalSalesTaxG$);
         double totalAfterTaxG$=totalSalesTaxG$+totalGlassCost$;
         
+        //envelope variables
         double totalEnvelopeCost$, totalEnvelopeTax$, totalSalesTaxE$;
         totalEnvelopeCost$=(nEnvelopes * envelopeCost$);
         totalSalesTaxE$=(totalEnvelopeCost$ * taxPercent);
