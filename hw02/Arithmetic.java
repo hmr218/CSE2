@@ -38,6 +38,7 @@ public class Arithmetic{
         totalGlassTax$=(totalGlassCost$) + (totalSalesTaxG$);
         double totalAfterTaxG$=totalSalesTaxG$+totalGlassCost$;
         
+        
         //envelope variables
         double totalEnvelopeCost$, totalEnvelopeTax$, totalSalesTaxE$;
         totalEnvelopeCost$=(nEnvelopes * envelopeCost$);
