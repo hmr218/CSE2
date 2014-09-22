@@ -18,14 +18,14 @@ public class BigMacAgain {
             if (myScanner.hasNextInt())
             {
                 int nBigMacs = myScanner.nextInt();
-                if (nBigMacs>0)
+              if (nBigMacs>0)
                 {
                 double costBigMacs$ = 2.22*nBigMacs;
-            System.out.println("You ordered " + nBigMacs + " for a cost of " + nBigMacs + "x2.22= " + costBigMacs$);
-            System.out.print("Do you want an order of fries (Y/y/N/n)? ");
-            String answer = myScanner.next();
+                System.out.println("You ordered " + nBigMacs + " for a cost of " + nBigMacs + "x2.22= " + costBigMacs$);
+                System.out.print("Do you want an order of fries (Y/y/N/n)? ");
+                String answer = myScanner.next();
             
-            if (answer.equals("Y") || answer.equals("y"))
+                if (answer.equals("Y") || answer.equals("y"))
             { 
                 double fries$ = 2.15;
                 System.out.println("You ordered fries at a cost of $2.15");
