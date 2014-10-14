@@ -62,9 +62,9 @@ public class Enigma3{
 }
 
 /*
- * By entering system.out.println statements 
- * 
- * 
- * 
+ * The problem here was a run time error, because dividing by zero isn't allowed. 
+ * By entering system.out.println statements, I was able to locate the point 
+ * in the code where n or k became zero, and fixed that code so it was no
+ * longer trying to divide by zero and would run correctly.s
  * 
  */
