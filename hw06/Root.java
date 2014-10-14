@@ -21,20 +21,19 @@ public class Root{
         double high = 1+x;
         double middle = 0;
         
-        while((high-low)>0.0000001*(1+x)){ //enters while loop to find the root of the user input
+        while((high-low)>0.0000001*(1+x)){ 
+        //Repeat this process until the difference between high and low is less than some small multiple of 1+x
          middle = ((low+high)/2); //begins to find the root of the value entered
         
-        if((middle*middle)>x) //
-        {
-            high = middle; //assigns high value to middle
+            if((middle*middle)>x)
+            {
+                high = middle; //assigns high value to middle
+            }
+            else
+            {
+                low = middle; //assigns low value to middle
+            }
         }
-        else
-        {
-            low = middle; //assigns low value to middle
-        }
-        }
-        
-        System.out.println("Interval: ["+ low + ", " + high + "]"); //prints the interval: low to high
         System.out.println("The square root is: " + middle);//prints the square root of user input
     }
 }        
