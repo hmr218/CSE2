@@ -8,57 +8,56 @@
 //entered and look like the following: 
 
 import java.util.Scanner; //scanner needed for user input
-public class NumberStack{
+public class NumberStack{ 
 
         //main method required for every Java program
         public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
         
-        System.out.print("Enter a number between 1 and 9: ");
-        if(scan.hasNextInt())
+        System.out.print("Enter a number between 1 and 9: "); //prompts user input
+        if(scan.hasNextInt()) //checks if the user input is an integer
         {
-        int input = scan.nextInt();
-        if(input>0 && input<10)
-        {
-        System.out.println("Using for loops: ");
-           for(int j=1;j<=input;j++){
+            int input = scan.nextInt();
+            if(input>0 && input<10) //checks if input is in the range
+            {
+                System.out.println("Using for loops: "); 
+                for(int j=1;j<=input;j++){ //prints output using for statements
                
-                for(int k=1;k<=j;k++){
+                    for(int k=1;k<=j;k++){
                     
+                        for(int z=input;z>j;z--){
+                        System.out.print(" "); //prints spaces
+                        }
+                    
+                        for(int x=1;x<=(2*j)-1;x++){
+                        System.out.print(j);
+                        }
+                    System.out.println();    
+                    }
+                
                     for(int z=input;z>j;z--){
-                        System.out.print(" ");
-                    }
-                    
-                    for(int x=1;x<=(2*j)-1;x++){
-                    System.out.print(j);
-                    }
-                  System.out.println();    
-                }
-                
-                for(int z=input;z>j;z--){
-                        System.out.print(" ");
+                        System.out.print(" "); //prints spaces
                     }
                 
-                for(int y=1;y<=(2*j)-1;y++){
-                    System.out.print("-");
-                }
+                    for(int y=1;y<=(2*j)-1;y++){
+                        System.out.print("-"); //prints dashes
+                    }
                 System.out.println();
            }
         
-        System.out.println("Using while loops: ");
-            int j = 1;
-
+        System.out.println("Using while loops: "); //prints output using while loops
+                int j = 1;
                 while(j<=input){
                   
                     int k = 1;                  
                     while(k<=j){
                         
-                         int z = input;
+                        int z = input;
                         while(z>j){
                             System.out.print(" ");
                             z--;
                         }
-                         int x = 1;
+                        int x = 1;
                         while(x<=(2*j)-1){
                             System.out.print(j);
                             x++;
@@ -71,30 +70,27 @@ public class NumberStack{
                             System.out.print(" ");
                             z--;
                         }
-                         int y = 1;
-                     while(y<=(2*j)-1){
+                        int y = 1;
+                        while(y<=(2*j)-1){
                          y++;
                          System.out.print("-");
-                     }
-                     System.out.println();
+                        }  
+                    System.out.println();
                 j++;     
-               }   
+                }   
             
-        System.out.println("Using do-while loops: ");
+        System.out.println("Using do-while loops: "); //prints output using do-while loops
                    
                 j = 1;
-
                 do{
-                  
                     int k = 1;                  
                     do{
-                        
-                         int z = input;
+                        int z = input;
                         do{
                             System.out.print(" ");
                             z--;
                         }while(z>j);
-                         int x = 1;
+                        int x = 1;
                         do{
                             System.out.print(j);
                             x++;
@@ -104,14 +100,14 @@ public class NumberStack{
                     }while(k<=j);
                     int z = input;
                     do{
-                            System.out.print(" ");
-                            z--;
-                        }while(z>j);
-                         int y = 1;
-                     while(y<=(2*j)-1){
+                        System.out.print(" ");
+                        z--;
+                    }while(z>j);
+                        int y = 1;
+                    do{
                          y++;
                          System.out.print("-");
-                     }
+                    }while(y<=(2*j)-1);
                      System.out.println();
                 j++;     
                }while(j<=input);   

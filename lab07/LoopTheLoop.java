@@ -3,7 +3,7 @@
 //CSE 002 
 //LoopTheLoop java program 
 
-//This program
+//This program uses while loops and a break statement 
 
 
 import java.util.Scanner; 
