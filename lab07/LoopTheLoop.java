@@ -3,7 +3,7 @@
 //CSE 002 
 //LoopTheLoop java program 
 
-//This program...
+//This program
 
 
 import java.util.Scanner; 
@@ -17,6 +17,14 @@ public class LoopTheLoop {
             if(myScanner.hasNextInt())
             {
                 int nStars = myScanner.nextInt();
+                
+                int counter = 1;
+                while(counter<=nStars)
+                {
+                    System.out.print("*");
+                    counter++;
+                }
+                System.out.println();
                 if(nStars<16 && nStars>0)
                 {
                     String star1 = "*";
@@ -39,23 +47,6 @@ public class LoopTheLoop {
                 System.out.println("Your int was not in the range [1.15]");
                 return;
             }
-            
-            int nStars = 10;
-            while(nStars>0)
-            {
-                System.out.print("*");
-                nStars--;
-            }
-            
-            System.out.println("");
-            String star = "*";
-            int stars = 10;
-            while(stars>0)
-            {
-                System.out.println(star);
-                star=star+"*";
-                stars--;
-            }
-            
+           
     }
 }        
