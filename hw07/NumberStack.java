@@ -111,7 +111,6 @@ public class NumberStack{
                      System.out.println();
                 j++;     
                }while(j<=input);   
-            
             }
             else
             {
