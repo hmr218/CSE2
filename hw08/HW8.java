@@ -3,12 +3,14 @@
 //CSE 002 
 //Methods java program 
 
-//This program...
+//This program gives you practice in writing methods, overloading methods, and in
+//forcing the user to enter good input. In the program below I call on three 
+//different overloaded versions of getInput().  
 
 
 import java.util.Scanner;
 public class HW8{
-        public static void main(String []arg){
+        public static void main(String []arg){ //main method required for every Java program
 	        char input;
 	        Scanner scan=new Scanner(System.in);
 	        
@@ -29,6 +31,7 @@ public class HW8{
 	        System.out.println("You entered '"+input+"'");
         }      
         public static char getInput(Scanner scan1, String input1)
+        //second method 
         {
             String userInput;
             while(true)
@@ -62,6 +65,7 @@ public class HW8{
             }
         }
         public static char getInput(Scanner scan2, String input2, int num1)
+        //third method
         {
            char x = 0;
            String userInput1 = scan2.next();
@@ -96,6 +100,7 @@ public class HW8{
                 }
         }
         public static char getInput(Scanner scan3, String input3, String input4)
+        //fourth method
         {
             char x = 0;
             
