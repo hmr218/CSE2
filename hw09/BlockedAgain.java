@@ -25,6 +25,7 @@ public class BlockedAgain{ //main class
         int input = checkRange(scan1);
         return input;
     }// end of get int method
+
 	public static int checkInt(Scanner scan1) //check int method to check if input is an integer
 	{
 	   int var = 0;
