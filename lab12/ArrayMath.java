@@ -38,28 +38,55 @@ public class ArrayMath{
     return out+"}";
   }
   
-  public static boolean equals(double x[], y[])
+  public static boolean equals(double x[], double y[])
   {
 
     if(x.length == y.length)
     {
       for(int i = 0; i<x.length; i++)
       {
-        if(x[i] == y[i])
+        if(!(x[i] == y[i]))
         {
-          return true;
+          return false;
         }
         else
         {
-          return false;
+          return true;
         }
       }
     }
     return false;
   }
   
-  public static String addArrays(double x[], y[])
+  public static double[] addArrays(double x[], double y[])
   {
+    int newLength = 0;
     
+    if(x.length > y.length){
+      newLength = x.length;
+    }
+    else{
+      newLength = y.length;
+    }
+    
+    double[] finalArray = new double[newLength];
+    
+    for(int i = 0; i <finalArray.length; i++)
+    {
+      if(i>(x.length-1)){
+        finalArray[i] = y[i];
+      }
+    
+    else if(i>(y.length-1)){
+      finalArray[i] = x[i];
+    }
+    else{
+      finalArray[i] = x[i] + y[i];
+    }
+    }
+    return finalArray;
+  
   }
+  
+  
 }

@@ -14,6 +14,8 @@ public class LoopTheLoop {
             Scanner myScanner;
             myScanner = new Scanner (System.in );
             
+            String goAgain = "";
+            do{
             System.out.print("Enter an integer between 1 and 15: "); //prompts user input 
             if(myScanner.hasNextInt()) //checks that input is an integer
             {
@@ -48,6 +50,13 @@ public class LoopTheLoop {
                 System.out.println("Your int was not in the range [1.15]");
                 return; //output if input isn't correct
             }
+            System.out.print("Enter y or Y to go again- ");
+            goAgain = myScanner.next();
+            }while(goAgain.equals("y") || goAgain.equals("Y"));
+           // if((goAgain == "y") || (goAgain == "Y")){
+            //    return;   
+           // }
+            
            
     }
 }        

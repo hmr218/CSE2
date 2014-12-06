@@ -24,46 +24,42 @@ public class Methods {
             System.out.println("It is "+ascending(a,b,c)+" that "+a+", "+b+
                        ", and "+c+" are in ascending order");
             
-            //public static int getInt(int x){
+               
+            }  //end of main
+             public static int getInt(Scanner scan){
+                 System.out.print("Enter an int: ");
                 
-               // while(!(scan.hasNextInt())){
-                   // System.out.println("You did not enter an int, try again: ");
-                 //   x = scan.nextInt();
-               // }
-               // if(scan.hasNextInt())
-                //{
-                  //x = scan.nextInt();   
-                //}
-            }    
-            public static int larger(int first, second){
-                int big, medium;
+                int x = 0;
+                while(!(scan.hasNextInt())){
+                    
+                   System.out.print("You did not enter an int, try again: ");
+                   scan.next();
+                }
+             
+               if(scan.hasNextInt())
+                {
+                  x = scan.nextInt();   
+                }
+                return x;
+             }
+            public static int larger(int first, int second){
                 
-                if(first>=second)
+                
+                if(first>second)
                 {
-                    first = big;
-                    second = medium;
+                    return first;
                 }
-                else if(first<second)
-                {
-                    first = medium;
-                    second = big;
-                }
-                return big;
+                return second;
+               
             }
-            public static int ascending(int first, second, third){
-                if(first>=second)
+            public static boolean ascending(int first, int second, int third){
+                if(first < second)
                 {
-                    if(second>=third){
-                        return "true";
-                    }
-                    else{
-                        return "false";
+                    if(second < third){
+                        return true;
                     }
                 }
-                else
-                {
-                    return "false";
-                }
+                return false;
             }
-    }
+    
 }
